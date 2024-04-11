@@ -1,0 +1,306 @@
+:root {
+  --primary-color: hsl(240, 60%, 60%);
+}
+
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* End Reset */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: hsl(0, 0%, 10%);
+}
+
+a {
+  text-underline-offset: 0.125em;
+}
+
+section {
+  min-height: 100vh;
+  display: grid;
+  align-content: start;
+  gap: 3rem;
+}
+
+section:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 48em) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+  color: hsl(0, 0%, 20%);
+}
+
+.container {
+  width: min(100% - 2rem, 60rem);
+  margin-inline: auto;
+}
+
+@media only screen and (min-width: 48em) {
+  .container {
+    width: min(100% - 4rem, 60rem);
+    margin-inline: auto;
+  }
+}
+
+/* Sections */
+
+.header {
+  margin-bottom: -5rem;
+  padding: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 0.5em;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero p {
+    font-size: 2rem;
+    margin-top: 0.5em;
+  }
+}
+
+.hero .button {
+  margin-top: 2.5rem;
+  padding-inline: 2em;
+}
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+/* Nav */
+
+.nav ul {
+  width: max-content;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media only screen and (min-width: 48em) {
+  .nav ul {
+    margin: 0 0 0 auto;
+  }
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+footer {
+  min-height: 2rem;
+  padding: 1rem;
+}
+
+/* Components */
+
+.button {
+  display: inline-block;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.75em 1em;
+  line-height: 1;
+  text-decoration: none;
+  color: white;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Image */
+
+.form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  padding: 1em;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+}
+
+.form .button {
+  place-self: start;
+  margin-top: 1rem;
+  padding-inline: 2em;
+}
+
+.image {
+  min-height: 20vh;
+  aspect-ratio: 3 / 2;
+  background: lightgray;
+}
+
+.skills {
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+  display: flex;
+  gap: 2rem 0.5rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  list-style-type: none;
+  padding: 1em;
+  background: rgb(226, 221, 255);
+  border-radius: 100vh;
+  font-size: 1.25rem;
+}
+
+.skill img {
+  width: 2em;
+}
+
+/* Project */
+
+.project {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .project {
+    margin-bottom: 4rem;
+  }
+}
+
+.project img {
+  width: min(100%, 45rem);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.links a:not([class]) {
+  color: inherit;
+}
+
+/* Utilities */
+
+.bold {
+  font-weight: bold;
+}
