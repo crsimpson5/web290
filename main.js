@@ -1,3 +1,5 @@
-document.getElementById("contact-form").addEventListener("submit", (e) => {
-  e.preventDefault();
+particlesJS.load("particles-js", "assets/particles.json", function () {});
+
+window.addEventListener("resize", () => {
+  particlesJS.load("particles-js", "assets/particles.json", function () {});
 });

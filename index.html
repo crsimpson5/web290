@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curtis Simpson</title>
     <link rel="stylesheet" href="styles.css" />
+    <!--  -->
+
+    <script src="particles.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
+    <div id="particles-js"></div>
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -25,9 +30,9 @@
       </div>
     </header>
 
-    <main class="container">
+    <main>
       <section class="hero">
-        <div>
+        <div class="container">
           <h1>Hi, I'm Curtis Simpson</h1>
           <p>I'm a Front-End Web Developer</p>
           <a href="#projects" class="button">View Projects</a>
@@ -35,140 +40,175 @@
       </section>
 
       <section id="about">
-        <h2>About Me</h2>
+        <div class="container">
+          <div class="section-inner">
+            <h2>About Me</h2>
 
-        <div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat omnis
-          quidem laboriosam ullam molestias rem aliquid reiciendis itaque ut
-          sequi! Obcaecati eligendi molestias quod tempora natus laudantium
-          tenetur vel voluptatum.
-        </div>
-        <div>
-          Placeat accusantium minima amet corrupti non eligendi doloremque porro
-          ullam aliquam sit molestias officiis, consequatur facilis itaque
-          ratione pariatur dolorum nesciunt odio eaque perferendis labore
-          quidem? Libero eum repellat quo.
-        </div>
+            <div>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+              omnis quidem laboriosam ullam molestias rem aliquid reiciendis
+              itaque ut sequi! Obcaecati eligendi molestias quod tempora natus
+              laudantium tenetur vel voluptatum.
+            </div>
+            <div>
+              Placeat accusantium minima amet corrupti non eligendi doloremque
+              porro ullam aliquam sit molestias officiis, consequatur facilis
+              itaque ratione pariatur dolorum nesciunt odio eaque perferendis
+              labore quidem? Libero eum repellat quo.
+            </div>
 
-        <div>
-          <h3>Skills</h3>
-          <ul class="skills">
-            <li class="skill">
-              <img src="assets/icons/html.svg" alt="" />HTML
-            </li>
-            <li class="skill"><img src="assets/icons/css.svg" alt="" />CSS</li>
-            <li class="skill">
-              <img src="assets/icons/javascript.svg" alt="" />JavaScript
-            </li>
-            <li class="skill">
-              <img src="assets/icons/react.svg" alt="" />React
-            </li>
-            <li class="skill">
-              <img src="assets/icons/database.svg" alt="" />SQL
-            </li>
-            <li class="skill"><img src="assets/icons/api.svg" alt="" />APIs</li>
-          </ul>
+            <div>
+              <h3>Skills</h3>
+              <ul class="skills">
+                <li class="skill">
+                  <img src="assets/icons/html.svg" alt="" />HTML
+                </li>
+                <li class="skill">
+                  <img src="assets/icons/css.svg" alt="" />CSS
+                </li>
+                <li class="skill">
+                  <img src="assets/icons/javascript.svg" alt="" />JavaScript
+                </li>
+                <li class="skill">
+                  <img src="assets/icons/react.svg" alt="" />React
+                </li>
+                <li class="skill">
+                  <img src="assets/icons/database.svg" alt="" />SQL
+                </li>
+                <li class="skill">
+                  <img src="assets/icons/api.svg" alt="" />APIs
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
+        <div class="container">
+          <div class="section-inner">
+            <h2>Projects</h2>
 
-        <div class="project">
-          <img src="assets/screenshots/planet-facts.jpg" alt="" />
-          <h3>Planet Facts Web App</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi,
-            sint! Modi, quibusdam, voluptate cumque molestias voluptatum
-            excepturi fuga deleniti delectus porro quasi corrupti in inventore
-            natus esse ipsa nihil aspernatur atque dolores commodi odio. Error,
-            repellendus natus a, similique distinctio doloribus dolores porro
-            asperiores veniam odio dignissimos, aliquam iure. Quo.
-          </p>
-          <h4>Built using:</h4>
-          <ul>
-            <li>React</li>
-            <li>React Router</li>
-            <li>SCSS</li>
-          </ul>
-          <p class="links">
-            <a
-              href="https://planet-facts-crs.vercel.app/"
-              target="_blank"
-              class="button"
-              >View Project</a
-            >
-            <a href="https://github.com/crsimpson5/planet-facts" target="_blank"
-              >GitHub</a
-            >
-          </p>
-        </div>
+            <div class="project">
+              <img src="assets/screenshots/planet-facts.jpg" alt="" />
+              <h3>Planet Facts Web App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi,
+                sint! Modi, quibusdam, voluptate cumque molestias voluptatum
+                excepturi fuga deleniti delectus porro quasi corrupti in
+                inventore natus esse ipsa nihil aspernatur atque dolores commodi
+                odio. Error, repellendus natus a, similique distinctio doloribus
+                dolores porro asperiores veniam odio dignissimos, aliquam iure.
+                Quo.
+              </p>
+              <h4>Built using:</h4>
+              <ul>
+                <li>React</li>
+                <li>React Router</li>
+                <li>SCSS</li>
+              </ul>
+              <p class="links">
+                <a
+                  href="https://planet-facts-crs.vercel.app/"
+                  target="_blank"
+                  class="button"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/crsimpson5/planet-facts"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </p>
+            </div>
 
-        <div class="project">
-          <img src="assets/screenshots/trivia.jpg" alt="" />
-          <h3>Trivia Game</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi,
-            sint! Modi, quibusdam, voluptate cumque molestias voluptatum
-            excepturi fuga deleniti delectus porro quasi corrupti in inventore
-            natus esse ipsa nihil aspernatur atque dolores commodi odio. Error,
-            repellendus natus a, similique distinctio doloribus dolores porro
-            asperiores veniam odio dignissimos, aliquam iure. Quo.
-          </p>
-          <p class="links">
-            <a
-              href="https://trivia-game-crs.vercel.app/"
-              target="_blank"
-              class="button"
-              >View Project</a
-            >
-            <a href="https://github.com/crsimpson5/trivia-game" target="_blank"
-              >GitHub</a
-            >
-          </p>
-        </div>
+            <div class="project">
+              <img src="assets/screenshots/trivia.jpg" alt="" />
+              <h3>Trivia Game</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi,
+                sint! Modi, quibusdam, voluptate cumque molestias voluptatum
+                excepturi fuga deleniti delectus porro quasi corrupti in
+                inventore natus esse ipsa nihil aspernatur atque dolores commodi
+                odio. Error, repellendus natus a, similique distinctio doloribus
+                dolores porro asperiores veniam odio dignissimos, aliquam iure.
+                Quo.
+              </p>
+              <h4>Built using:</h4>
+              <ul>
+                <li>React</li>
+                <li>React Router</li>
+                <li>SCSS</li>
+              </ul>
+              <p class="links">
+                <a
+                  href="https://trivia-game-crs.vercel.app/"
+                  target="_blank"
+                  class="button"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/crsimpson5/trivia-game"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </p>
+            </div>
 
-        <div class="project">
-          <img src="assets/screenshots/devjobs.jpg" alt="">
-          <h3>Devjobs App</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi,
-            sint! Modi, quibusdam, voluptate cumque molestias voluptatum
-            excepturi fuga deleniti delectus porro quasi corrupti in inventore
-            natus esse ipsa nihil aspernatur atque dolores commodi odio. Error,
-            repellendus natus a, similique distinctio doloribus dolores porro
-            asperiores veniam odio dignissimos, aliquam iure. Quo.
-          </p>
-          <p class="links">
-            <a
-              href="https://devjobs-crs.vercel.app/"
-              target="_blank"
-              class="button"
-              >View Project</a
-            >
-            <a
-              href="https://github.com/crsimpson5/devjobs-web-app"
-              target="_blank"
-              >GitHub</a
-            >
-          </p>
+            <div class="project">
+              <img src="assets/screenshots/devjobs.jpg" alt="" />
+              <h3>Devjobs App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi,
+                sint! Modi, quibusdam, voluptate cumque molestias voluptatum
+                excepturi fuga deleniti delectus porro quasi corrupti in
+                inventore natus esse ipsa nihil aspernatur atque dolores commodi
+                odio. Error, repellendus natus a, similique distinctio doloribus
+                dolores porro asperiores veniam odio dignissimos, aliquam iure.
+                Quo.
+              </p>
+              <h4>Built using:</h4>
+              <ul>
+                <li>React</li>
+                <li>React Router</li>
+                <li>SCSS</li>
+              </ul>
+              <p class="links">
+                <a
+                  href="https://devjobs-crs.vercel.app/"
+                  target="_blank"
+                  class="button"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/crsimpson5/devjobs-web-app"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
+      <section id="contact" class="bg-accent">
+        <div class="container">
+          <div class="section-inner">
+            <h2>Contact</h2>
 
-        <form class="form" action="" id="contact-form">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
+            <form class="form" action="" id="contact-form">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
 
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
 
-          <label for="message">Message</label>
-          <textarea name="" id="message" cols="30" rows="10"></textarea>
-          <button class="button">Send</button>
-        </form>
+              <label for="message">Message</label>
+              <textarea name="" id="message" cols="30" rows="10"></textarea>
+              <button class="button">Send</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
