@@ -196,7 +196,13 @@
           <div class="section-inner">
             <h2>Contact</h2>
 
-            <form class="form" action="" id="contact-form">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              class="form"
+              id="contact-form"
+            >
               <label for="name">Name</label>
               <input type="text" name="name" id="name" />
 
@@ -204,8 +210,8 @@
               <input type="text" name="email" id="email" />
 
               <label for="message">Message</label>
-              <textarea name="" id="message" cols="30" rows="10"></textarea>
-              <button class="button">Send</button>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              <button type="submit" class="button">Send</button>
             </form>
           </div>
         </div>
