@@ -1,5 +1,6 @@
 :root {
-  --primary-color: hsl(240, 60%, 60%);
+  --primary-color: hsl(249, 47%, 46%);
+  --primary-color-lighter: hsl(249, 40%, 53%);
 }
 
 /* Reset */
@@ -213,6 +214,10 @@ footer {
   color: white;
   background: var(--primary-color);
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--primary-color-lighter);
 }
 
 /* Image */
